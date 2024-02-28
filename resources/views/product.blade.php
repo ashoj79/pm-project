@@ -5,16 +5,16 @@
 @section('content')
 
 <div class="flex justify-center items-center" style="background: #edf2f7;">
-    <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
-        <div class="relative py-3 flex justify-center" style="width: 500px; height: 380px;">
+    <div class="min-h-screen py-6 flex flex-col justify-center items-center sm:py-12 w-full">
+        <div class="relative py-3 flex justify-center w-[90vw] md:w-[500px] md:h-[380px]">
             <div
-                class="absolute inset-0 bg-gradient-to-r from-blue-300 to-blue-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+                class="absolute inset-0 bg-gradient-to-r from-blue-300 to-blue-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 rounded-3xl">
             </div>
-            <div class="bg-white relative shadow-lg sm:rounded-3xl px-3 pt-2 flex items-center"
+            <div class="bg-white relative shadow-lg rounded-3xl px-3 pt-2 flex items-center w-[90vw]"
                 style="padding-top: 16px;">
                 <form class="w-full max-w-lg z-50" method="POST" action="#">
                     @csrf
-                    <div class="flex flex-wrap flex-row-reverse -mx-3 mb-6 relative">
+                    <div class="flex flex-wrap flex-row-reverse -mx-3 mb-6 relative w-[90vw] md:w-full">
                         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                             <label
                                 class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 text-right pr-3"
