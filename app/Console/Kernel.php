@@ -15,7 +15,7 @@ class Kernel extends ConsoleKernel
     {
         $schedule->call(function (){
             Order::where('days', '>', -1)->decrement('days');
-        })->everyMinute()->timezone("Asia/Tehran");
+        })->daily()->timezone("Asia/Tehran");
     }
 
     /**
